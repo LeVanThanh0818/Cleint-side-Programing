@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Le Web Design</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Style.R2.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body onload="init();">
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar white padding card" style="letter-spacing:4px;">
+    <a href="#home" class="bar-item button">Le Web</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="right hide-small">
+      <a href="#about" class="bar-item button">About</a>
+      <a href="#menu" class="bar-item button">Menu</a>
+      <a href="#contact" class="bar-item button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="display-container content wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="image" src="Pizza_3.jpg" alt="Pizza Catering" width="1600" height="800">
+  <div class="display-bottomleft padding-large opacity">
+    <h1 class="xxlarge">Le Web</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="content" style="max-width:1300px" > <!--style="max-width:1300px style="max-width:1600px"-->
+
+  <!-- About Section -->
+  <div class="row padding-64" id="about">
+    <div class="col m6 padding-large">  <!--hide-small-->
+     <img src="Grap_1.jpg" class="round image opacity-min" alt="Table Setting" > <!--tablesetting2.jpg width="600" height="750"-->
+    </div>
+
+    <div class="col m6 padding-large">
+      <h1 class="center">About Catering</h1><br>
+      <h5 class="center">Tradition since 1889</h5>
+      <p class="large">Modern pizza evolved from similar flatbread dishes in Naples, Italy, in the 18th or early 19th century. Before that time, flatbread was often topped with ingredients such as garlic, salt, lard, and cheese. It is uncertain when tomatoes were first added and there are many conflicting claims. Until about 1830, pizza was sold from open-air stands and out of pizza bakeries.</p>
+      <p class="large hide-medium">A popular contemporary legend holds that the archetypal pizza, pizza Margherita, was invented in 1889, when the Royal Palace of Capodimonte commissioned the Neapolitan pizzaiolo (pizza maker) Raffaele Esposito to create a pizza in honor of the visiting Queen Margherita. Of the three different pizzas he created, the Queen strongly preferred a pizza swathed in the colors of the Italian flag — red (tomato), green (basil), and white (mozzarella). Supposedly, this kind of pizza was then named after the Queen, although later research cast doubt on this legend. An official letter of recognition from the Queen's "head of service" remains on display in Esposito's shop, now called the Pizzeria Brandi.</p>
+      <p class="large text-grey hide-medium">Everyone loves pizza. This disc of dough is an incredible blank canvas to create innovative and crowd-pleasing pies. Loved by vegetarians, vegans, and carnivores alike, pizza isn't just a quick dinner dish anymore, or an on-the-go bite. Pizza is becoming a gourmet assemblage of delicious, top-of-the-line ingredients.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="row padding-64" id="menu">
+    <div class="col l6 padding-large"> <!--W3 no hide-small-->
+      <h1 class="center">Our Menu</h1><br>
+      <h4>Pizzat</h4>
+      <table>     <!--.text-grey text-align: left;-->
+        <tr>
+          <th> </th> <!--class="text-grey"-->
+          <th>Norm</th>
+          <th>Familypizza</th>
+        </tr>
+        <tr>
+          <th class="itermName">Mexicana </th> <!--class="text-grey"-->
+          <th>11,50</th>
+          <th>20,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey">Pepperoni, ananas, jalopeno, tacokastike</th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Asteca </th>
+          <th>11,50</th>
+          <th>20,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey">Kinkku, jauheliha, herkkusieni, pekoni </th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Inkkari </th>
+          <th>11,50</th>
+          <th>20,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey">Kana, ananas, banaani, curry </th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Revontuli </th> <!--class="text-grey"-->
+          <th>11,50</th>
+          <th>21,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey">Kebab, poronliha, ananas, aura</th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Spicy beef </th>
+          <th>11,90</th>
+          <th>21,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey">Pekoni, spicy beef, salami, BBQ-kastike </th>
+          <th></th>
+        </tr>
+        <tr>
+          <th class="itermName">BBQ </th>
+          <th>11,90</th>
+          <th>21,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey">Kana, paprika, sipuli, pekoni, BBQ-kastike </th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Rostica </th> <!--class="text-grey"-->
+          <th>11,90</th>
+          <th>21,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey">Pepperoni, mozzarella, aurinkokuivattu tomaatti, pesto</th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Felino </th>
+          <th>11,90</th>
+          <th>21,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey">Mozzarella, salami, tomaatti, pesto, valkosipuli</th>
+          <th"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Synttäripizza </th>
+          <th>12,00</th>
+          <th>23,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey">Kinkku, salami, katkarapu, tuplajuusto, valkosipuli, kananmuna </th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Pohjalainen </th> <!--class="text-grey"-->
+          <th>13,00</th>
+          <th>23,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey">Kebab, salami, sipuli, salaatti, majoneesi</th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Poropizza </th>
+          <th>12,00</th>
+          <th>23,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey">Poronliha, salami, aura, ananas</th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Alvar Aalto </th> <!--class="text-grey"-->
+          <th>12,50</th>
+          <th>23,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey">Kebab, sipuli, tomaatti, jalopeno, feta, smetana</th>
+          <th class="text-grey"></th>
+        </tr>
+      </table>
+      <!-- <p class="text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br> -->
+      <br>
+    </div>
+    
+    <div class="col l6 padding-large">
+      <img src="tablesetting3.jpg" class="round image opacity-min" alt="Menu" style="width:100%"> <!--opacity-min(75%->99%)opacity-max(25%)-->
+    </div>    
+  <!-- <hr> -->
+  <div class="row padding-64" > <!--id="menu"-->
+    <br><br>
+    <div class="col l6 padding-large hide-small">
+      <img src="kebab_1.jpg" class="round image opacity-min" alt="Menu" style="width:100%"> <!--opacity-min(75%->99%)opacity-max(25%)-->
+    </div>   
+    <div class="col l6 padding-large"> <!--W3 no hide-small-->
+      <!-- <h1 class="center">Our Menu</h1><br> -->
+      <h4>Kebab</h4>
+      <table>     <!--.text-grey text-align: left;-->
+        <tr>
+          <th> </th> <!--class="text-grey"-->
+          <th>Norm</th>
+          <th>Large</th>
+        </tr>
+        <tr>
+          <th class="itermName">Pitaleipä </th> <!--class="text-grey"-->
+          <th>11,00</th>
+          <th>12,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Riisikebab </th>
+          <th>11,00</th>
+          <th>12,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Iskender </th>
+          <th>11,50</th>
+          <th>12,50</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kebab ranskalaisilla </th> <!--class="text-grey"-->
+          <th>11,00</th>
+          <th>12,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kebab valkosipuliperunoilla </th>
+          <th>12,00</th>
+          <th>13,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kebab kermaperunoilla </th>
+          <th>11,00</th>
+          <th>12,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kebab juustoperunoilla </th> <!--class="text-grey"-->
+          <th>12,00</th>
+          <th>13,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kebab auraperunoilla </th>
+          <th>12,00</th>
+          <th>13,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kebab lohkoperunoilla </th>
+          <th>12,00</th>
+          <th>13,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kebab salaatilla </th> <!--class="text-grey"-->
+          <th>12,00</th>
+          <th>13,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Talon spesial kebab </th>
+          <th>14,50</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+      </table>
+      <br>
+      <h4>Rullat</h4>
+      <table>
+        <tr>
+          <th class="itermName">Kebabrulla </th>
+          <th>11,00</th>
+          <th>12,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kanarulla </th>
+          <th>11,00</th>
+          <th>12,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kana-pekonirulla </th> <!--class="text-grey"-->
+          <th>12,00</th>
+          <th>13,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kebab-pekonirulla</th>
+          <th>12,00</th>
+          <th>13,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kebab-aurarulla </th>
+          <th>12,00</th>
+          <th>13,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kana-aurarulla</th>
+          <th>12,00</th>
+          <th>13,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kebab-vuohenjuustorulla </th> <!--class="text-grey"-->
+          <th>12,00</th>
+          <th>13,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+        <tr>
+          <th class="itermName">Kana-vuohenjuustorulla</th>
+          <th>12,00</th>
+          <th>13,00</th>
+        </tr>
+        <tr>
+          <th class="text-grey"></th>
+          <th class="text-grey"></th>
+        </tr>
+      </table>
+      <br>  
+      <!-- <p class="text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br> -->
+    </div> 
+  </div>
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="container padding-64" id="contact">
+    <div class="col s8 padding-small">
+    <h1>Contact</h1><br>
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="text-blue-grey large"><b>Catering Service, Puskantie 38 Seinajoki Finland</b></p>
+    <p>You can also contact us by phone +358417540130 or email vanthanh@fosta.vn, or you can send us a message here to make an appointment:</p>
+    
+    <form ><!-- action="/action_page.php" target="_blank" -->
+      <p><input class="input padding-small" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="input padding-small" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="input padding-small" type="datetime-local" placeholder="Date and time" required name="date" value="document.write(today)"></p>
+      <p><input class="input padding-small" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="button light-grey section" type="submit">SEND MESSAGE</button></p>
+    </form>
+    </div>
+    <div class="col s4 padding-small">
+      <h1>Check BMI</h1><br>
+      <div id="inputs">
+        <!-- Event onchange is used to call function
+             calculateBMI(height, weight) when the value in either of the
+             input fields is changed. The parameters are taken from the
+             input fields.
+        -->
+        <form 
+            onchange=
+                "calculateBMI(document.getElementById('height').value,
+                document.getElementById('weight').value);">
+        
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="formHeight" min="1"
+                max="999" value="170">
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="formWeight" min="1"
+                max="999" value="65">
+        </form>
+    </div>
+
+    <!-- Element div for the calculated BMI, min and max BMI. Updated every
+         time the BMI is calculated and on page load). -->
+    <div id="calculatedBMI">
+        <p>JavaScript is disabled or something went wrong</p>
+    </div>
+    <!-- Element div for the min and max BMI. Updated when either
+         changes and on page load). -->
+    <div id="minAndMaxBMI"></div>
+
+    <!-- Element div for the form having the radio button for setting
+         saving to "No" (default) and "Yes".
+    -->
+    <div id="saveSetting">
+        <!-- Event onchange is used to call function store(setting) when
+             the checked radio button changes. The parameter setting is 
+             true if "Yes" is checked and false otherwise.
+        -->
+        <form onchange="store(document.getElementById('yes').checked);">
+            <p>Save the data?</p>
+            <label for="no">No</label>
+            <input type="radio" id="no" name="setting" value="No">
+
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="setting" value="Yes">
+        </form>
+    </div>
+
+    <!-- JavaScript functions are in a separate file (bmi.js) -->
+    <script src="bmi.js">
+    </script>
+    <br>
+    <h7>Choose the best way for our life!!!</h7>
+      <table>
+        <tr>
+          <th>BMI</th>
+          <th>We will</th>
+        </tr>
+        <tr>
+          <th class="text-grey">Below 18.5</th>
+          <th class="text-grey">Eat more</th>
+        </tr>
+        <tr>
+          <th class="text-grey">18.5 – 24.9</th>
+          <th class="text-grey">Balance Active and Eating</th>
+        </tr>
+        <tr>
+          <th class="text-grey">25.0 – 29.9</th>
+          <th class="text-grey">Active more</th>
+        </tr>
+        <tr>
+          <th class="text-grey">30.0 and Above</th>
+          <th class="text-grey">More and More Active</th>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="center light-grey padding-32">
+  <p>Powered by <a href="fosta.vn" title="W3.CSS" target="_blank" class="hover-text-green">Le Web D</a></p>
+  <script language="javascript">
+    var today = new Date();
+    document.write(today);
+</script>
+</footer>
+
+
+</body>
+</html>
